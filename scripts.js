@@ -24,18 +24,18 @@ downloadButton.addEventListener('click', () => {
 
 function getFormValues(){
   const cellDepth = {
-    name: document.getElementById('cellDepthFS').querySelector("legend").innerText,
-    value: `${document.getElementById('cellDepth1').value}/${document.getElementById('cellDepth2').value}`
+    name: document.getElementById('cellDepth').previousSibling.previousSibling.innerText,
+    value: document.getElementById('cellDepth').value / 25.4
   }
   
   const cellWidth = {
-    name: document.getElementById('cellWidthFS').querySelector("legend").innerText,
-    value: `${document.getElementById('cellWidth1').value}/${document.getElementById('cellWidth2').value}`
+    name: document.getElementById('cellWidth').previousSibling.previousSibling.innerText,
+    value: document.getElementById('cellWidth').value / 25.4
   }
   
   const cellHeight = {
-    name: document.getElementById('cellHeightFS').querySelector("legend").innerText,
-    value: `${document.getElementById('cellHeight1').value}/${document.getElementById('cellHeight2').value}`
+    name: document.getElementById('cellHeight').previousSibling.previousSibling.innerText,
+    value: document.getElementById('cellHeight').value / 25.4
   }
   
   const dividerThickness = {
@@ -54,8 +54,8 @@ function getFormValues(){
   }
   
   const topSpace = {
-    name: document.getElementById('topSpaceFS').querySelector("legend").innerText,
-    value: `${document.getElementById('topSpace1').value}/${document.getElementById('topSpace2').value}`
+    name: document.getElementById('topSpace').previousSibling.previousSibling.innerText,
+    value: document.getElementById('topSpace').value / 25.4
   }
   
   const sidePlateThickness = {

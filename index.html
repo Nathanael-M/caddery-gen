@@ -10,6 +10,19 @@
 <body>
   <div class="gen-wrapper">
     <form id="gen-form">
+      <div class="data-input input-wrapper">
+        <label for="cellDepth">Cell Depth</label>
+        <input type="number" name="cellDepth" id="cellDepth" step="0.01" min="0" value="0">
+      </div>
+      <div class="data-input input-wrapper">
+        <label for="cellWidth">Cell Width</label>
+        <input type="number" name="cellWidth" id="cellWidth" step="0.01" min="0" value="0">
+      </div>
+      <div class="data-input input-wrapper">
+        <label for="cellHeight">Cell Height</label>
+        <input type="number" name="cellHeight" id="cellHeight" step="0.01" min="0" value="0">
+      </div>
+      <!--
       <fieldset id="cellDepthFS">
         <legend>Cell Depth</legend>
         <div class="data-input input-wrapper">
@@ -18,6 +31,7 @@
           <input class="inline-input" type="number" name="cellDepth2" id="cellDepth2" min="0" step="0.01"value="0">
         </div>  
       </fieldset>
+      
       <fieldset id="cellWidthFS">
         <legend>Cell Width</legend>
         <div class="data-input input-wrapper">
@@ -34,6 +48,7 @@
           <input class="inline-input" type="number" name="cellHeight2" id="cellHeight2" min="0" step="0.01"value="0">
         </div>  
       </fieldset>
+    -->
 
       <div class="data-input input-wrapper">
           <label for="dividerThickness">Divider Thickness</label>
@@ -49,7 +64,12 @@
           <label for="numCellsWide">Num Cells Wide</label>
           <input type="number" name="numCellsWide" id="numCellsWide" min="1" step="1" value="1">
       </div>
-      
+
+      <div class="data-input input-wrapper">
+        <label for="topSpace">Top Space</label>
+        <input type="number" name="topSpace" id="topSpace" step="0.01" min="0" value="0">
+      </div>
+      <!--
       <fieldset id="topSpaceFS">
         <legend>Top Space</legend>
         <div class="data-input input-wrapper">
@@ -58,6 +78,7 @@
           <input class="inline-input" type="number" name="topSpace2" id="topSpace2" min="0" step="0.01"value="0">
         </div>  
       </fieldset>
+      -->
     
       <div class="data-input input-wrapper">
         <label for="sidePlateThickness">Side Plate Thickness</label>
