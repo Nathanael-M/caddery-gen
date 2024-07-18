@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="scripts.js" type="text/javascript" defer ></script>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="gen-wrapper">
+    <form id="gen-form">
+      <fieldset id="cellDepthFS">
+        <legend>Cell Depth</legend>
+        <div class="data-input input-wrapper">
+          <input class="inline-input" type="number" name="cellDepth1" id="cellDepth1" min="0" step="0.01" value="0">
+          /
+          <input class="inline-input" type="number" name="cellDepth2" id="cellDepth2" min="0" step="0.01"value="0">
+        </div>  
+      </fieldset>
+      <fieldset id="cellWidthFS">
+        <legend>Cell Width</legend>
+        <div class="data-input input-wrapper">
+          <input class="inline-input" type="number" name="cellWidth1" id="cellWidth1" min="0" step="0.01" value="0">
+          /
+          <input class="inline-input" type="number" name="cellWidth2" id="cellWidth2" min="0" step="0.01"value="0">
+        </div>  
+      </fieldset>
+      <fieldset id="cellHeightFS">
+        <legend>Cell Height</legend>
+        <div class="data-input input-wrapper">
+          <input class="inline-input" type="number" name="cellHeight1" id="cellHeight1" min="0" step="0.01" value="0">
+          /
+          <input class="inline-input" type="number" name="cellHeight2" id="cellHeight2" min="0" step="0.01"value="0">
+        </div>  
+      </fieldset>
+
+      <div class="data-input input-wrapper">
+          <label for="dividerThickness">Divider Thickness</label>
+          <input type="number" name="dividerThickness" id="dividerThickness" step="0.01" min="0" value="0">
+      </div>
+      
+      <div class="data-input input-wrapper">
+          <label for="numCellsDeep">Num Cells Deep</label>
+          <input type="number" name="numCellsDeep" id="numCellsDeep" min="1" step="1" value="1">
+      </div>
+      
+      <div class="data-input input-wrapper">
+          <label for="numCellsWide">Num Cells Wide</label>
+          <input type="number" name="numCellsWide" id="numCellsWide" min="1" step="1" value="1">
+      </div>
+      
+      <fieldset id="topSpaceFS">
+        <legend>Top Space</legend>
+        <div class="data-input input-wrapper">
+          <input class="inline-input" type="number" name="topSpace1" id="topSpace1" min="0" step="0.01" value="0">
+          /
+          <input class="inline-input" type="number" name="topSpace2" id="topSpace2" min="0" step="0.01"value="0">
+        </div>  
+      </fieldset>
+    
+      <div class="data-input input-wrapper">
+        <label for="sidePlateThickness">Side Plate Thickness</label>
+        <select name="sidePlateThickness" id="sidePlateThickness">
+          <option value="0.0625">1/16"</option>
+          <option value="0.1250">1/8"</option>
+          <option value="0.1875">3/16"</option>
+          <option value="0.2500">1/4"</option>
+          <option value="0.3125">5/16"</option>
+          <option value="0.3750">3/8"</option>
+          <option value="0.4375">7/16"</option>
+          <option value="0.5000">1/2"</option>
+          <option value="0.5625">9/16"</option>
+          <option value="0.6250">5/8"</option>
+          <option value="0.6875">11/16"</option>
+          <option value="0.7500">3/4"</option>
+          <option value="0.8125">13/16"</option>
+          <option value="0.8750">7/8"</option>
+          <option value="0.9375">15/16"</option>
+          <option value="1.0000">1"</option>
+          <option value="1.0625">1 1/16"</option>
+          <option value="1.1250">1 1/8"</option>
+          <option value="1.1875">1 3/16"</option>
+          <option value="1.2500">1 1/4"</option>
+          <option value="1.3125">1 5/16"</option>
+          <option value="1.3750">1 3/8"</option>
+          <option value="1.4375">1 7/16"</option>
+          <option value="1.5000">1 1/2"</option>
+          <option value="1.5625">1 9/16"</option>
+          <option value="1.6250">1 5/8"</option>
+          <option value="1.6875">1 11/16"</option>
+          <option value="1.7500">1 3/4"</option>
+          <option value="1.8125">1 13/16"</option>
+          <option value="1.8750">1 7/8"</option>
+          <option value="1.9375">1 15/16"</option>
+          <option value="2.0000">2"</option>
+        </select>
+      </div>
+
+      <div class="data-input input-wrapper">
+        <label for="topPlateThickness">Top Plate Thickness</label>
+        <select name="topPlateThickness" id="topPlateThickness">
+          <option value="0.0625">1/16"</option>
+          <option value="0.1250">1/8"</option>
+          <option value="0.1875">3/16"</option>
+          <option value="0.2500">1/4"</option>
+          <option value="0.3125">5/16"</option>
+          <option value="0.3750">3/8"</option>
+          <option value="0.4375">7/16"</option>
+          <option value="0.5000">1/2"</option>
+          <option value="0.5625">9/16"</option>
+          <option value="0.6250">5/8"</option>
+          <option value="0.6875">11/16"</option>
+          <option value="0.7500">3/4"</option>
+          <option value="0.8125">13/16"</option>
+          <option value="0.8750">7/8"</option>
+          <option value="0.9375">15/16"</option>
+          <option value="1.0000">1"</option>
+          <option value="1.0625">1 1/16"</option>
+          <option value="1.1250">1 1/8"</option>
+          <option value="1.1875">1 3/16"</option>
+          <option value="1.2500">1 1/4"</option>
+          <option value="1.3125">1 5/16"</option>
+          <option value="1.3750">1 3/8"</option>
+          <option value="1.4375">1 7/16"</option>
+          <option value="1.5000">1 1/2"</option>
+          <option value="1.5625">1 9/16"</option>
+          <option value="1.6250">1 5/8"</option>
+          <option value="1.6875">1 11/16"</option>
+          <option value="1.7500">1 3/4"</option>
+          <option value="1.8125">1 13/16"</option>
+          <option value="1.8750">1 7/8"</option>
+          <option value="1.9375">1 15/16"</option>
+          <option value="2.0000">2"</option>
+        </select>
+      </div>
+        
+      <div class="data-input input-wrapper">
+        <label for="bottomPlateThickness">Bottom Plate Thickness</label>
+        <select name="bottomPlateThickness" id="bottomPlateThickness">
+          <option value="0.0625">1/16"</option>
+          <option value="0.1250">1/8"</option>
+          <option value="0.1875">3/16"</option>
+          <option value="0.2500">1/4"</option>
+          <option value="0.3125">5/16"</option>
+          <option value="0.3750">3/8"</option>
+          <option value="0.4375">7/16"</option>
+          <option value="0.5000">1/2"</option>
+          <option value="0.5625">9/16"</option>
+          <option value="0.6250">5/8"</option>
+          <option value="0.6875">11/16"</option>
+          <option value="0.7500">3/4"</option>
+          <option value="0.8125">13/16"</option>
+          <option value="0.8750">7/8"</option>
+          <option value="0.9375">15/16"</option>
+          <option value="1.0000">1"</option>
+          <option value="1.0625">1 1/16"</option>
+          <option value="1.1250">1 1/8"</option>
+          <option value="1.1875">1 3/16"</option>
+          <option value="1.2500">1 1/4"</option>
+          <option value="1.3125">1 5/16"</option>
+          <option value="1.3750">1 3/8"</option>
+          <option value="1.4375">1 7/16"</option>
+          <option value="1.5000">1 1/2"</option>
+          <option value="1.5625">1 9/16"</option>
+          <option value="1.6250">1 5/8"</option>
+          <option value="1.6875">1 11/16"</option>
+          <option value="1.7500">1 3/4"</option>
+          <option value="1.8125">1 13/16"</option>
+          <option value="1.8750">1 7/8"</option>
+          <option value="1.9375">1 15/16"</option>
+          <option value="2.0000">2"</option>
+        </select>
+      </div>
+      
+      <div class="data-input input-wrapper">
+        <label for="endPlateThickness">End Plate Thickness</label>
+        <select name="endPlateThickness" id="endPlateThickness">
+          <option value="0.0625">1/16"</option>
+          <option value="0.1250">1/8"</option>
+          <option value="0.1875">3/16"</option>
+          <option value="0.2500">1/4"</option>
+          <option value="0.3125">5/16"</option>
+          <option value="0.3750">3/8"</option>
+          <option value="0.4375">7/16"</option>
+          <option value="0.5000">1/2"</option>
+          <option value="0.5625">9/16"</option>
+          <option value="0.6250">5/8"</option>
+          <option value="0.6875">11/16"</option>
+          <option value="0.7500">3/4"</option>
+          <option value="0.8125">13/16"</option>
+          <option value="0.8750">7/8"</option>
+          <option value="0.9375">15/16"</option>
+          <option value="1.0000">1"</option>
+          <option value="1.0625">1 1/16"</option>
+          <option value="1.1250">1 1/8"</option>
+          <option value="1.1875">1 3/16"</option>
+          <option value="1.2500">1 1/4"</option>
+          <option value="1.3125">1 5/16"</option>
+          <option value="1.3750">1 3/8"</option>
+          <option value="1.4375">1 7/16"</option>
+          <option value="1.5000">1 1/2"</option>
+          <option value="1.5625">1 9/16"</option>
+          <option value="1.6250">1 5/8"</option>
+          <option value="1.6875">1 11/16"</option>
+          <option value="1.7500">1 3/4"</option>
+          <option value="1.8125">1 13/16"</option>
+          <option value="1.8750">1 7/8"</option>
+          <option value="1.9375">1 15/16"</option>
+          <option value="2.0000">2"</option>
+        </select>
+      </div>
+    </form>
+    <button id="gen-button">Generate</button>
+    <button disabled id="download-button">Download</button>
+  </div>
+  <div id="output-wrapper">
+
+  </div>
+</body>
+</html>
