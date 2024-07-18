@@ -25,17 +25,17 @@ downloadButton.addEventListener('click', () => {
 function getFormValues(){
   const cellDepth = {
     name: document.getElementById('cellDepth').previousSibling.previousSibling.innerText,
-    value: document.getElementById('cellDepth').value / 25.4
+    value: (document.getElementById('cellDepth').value / 25.4).toFixed(4)
   }
   
   const cellWidth = {
     name: document.getElementById('cellWidth').previousSibling.previousSibling.innerText,
-    value: document.getElementById('cellWidth').value / 25.4
+    value: (document.getElementById('cellWidth').value / 25.4).toFixed(4)
   }
   
   const cellHeight = {
     name: document.getElementById('cellHeight').previousSibling.previousSibling.innerText,
-    value: document.getElementById('cellHeight').value / 25.4
+    value: (document.getElementById('cellHeight').value / 25.4).toFixed(4)
   }
   
   const dividerThickness = {
@@ -55,7 +55,7 @@ function getFormValues(){
   
   const topSpace = {
     name: document.getElementById('topSpace').previousSibling.previousSibling.innerText,
-    value: document.getElementById('topSpace').value / 25.4
+    value: (document.getElementById('topSpace').value / 25.4).toFixed(4)
   }
   
   const sidePlateThickness = {
